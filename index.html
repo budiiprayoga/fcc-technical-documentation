@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Technical Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header><a href="index.html" class="logo">Programming Languanges</a></header>
+      <a href="#Introduction" class="nav-link">Introduction</a>
+      <a href="#HTML" class="nav-link">HTML</a>
+      <a href="#CSS" class="nav-link">CSS</a>
+      <a href="#JavaScript" class="nav-link">JavaScript</a>
+      <a href="#C++" class="nav-link">C++</a>
+      <a href="#Python" class="nav-link">Python</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>There are many languages about coding. In this page, we provide you information some of them. The languages that you will find in this page are:
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C++</li>
+                <li>Python</li>
+            </ul>
+        </p>
+        <p>You can explore others languages on your own. Try to explore other languages too. Just have fun and learn.</p>
+      </section>
+
+      <section class="main-section" id="HTML">
+        <header>HTML</header>
+        <p>HTML markup consists of several key components, including those called tags (and their attributes), character-based data types, character references and entity references. HTML tags most commonly come in pairs like <code class="code_desc">&lt;h1&gt;</code> and <code class="code_desc">&lt;/h1&gt;</code>, although some represent empty elements and so are unpaired, for example <code class="code_desc">&lt;img&gt;</code>. The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).</p>
+        <p>Another important component is the HTML document type declaration, which triggers standards mode rendering.</p>
+        <p>The following is an example of the classic "Hello, World!" program:</p>
+        <code>
+            <pre>
+&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;This is a title&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div&gt;
+                &lt;p&gt;Hello world!&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</pre>
+        </code>
+      </section>
+
+      <section class="main-section" id="CSS">
+        <header>CSS</header>
+        <p>Before CSS, nearly all presentational attributes of HTML documents were contained within the HTML markup. All font colors, background styles, element alignments, borders and sizes had to be explicitly described, often repeatedly, within the HTML. CSS lets authors move much of that information to another file, the style sheet, resulting in considerably simpler HTML.</p>
+        <p>For example, under pre-CSS HTML, a heading element defined with red text would be written as:</p>
+        <code>
+            <pre>&lt;h1&gt;&lt;font color="red"&gt;Chapter 1.&lt;/font&gt;&lt;/h1&gt;</pre>
+        </code>
+      </section>
+
+      <section class="main-section" id="JavaScript">
+        <header>JavaScript</header>
+        <h3>Variables</h3>
+        <p>Writing variables in standard JavaScript does not have a data type. All values ​​can be stored in all variables. Variables can be specified by let (block level variable), var ( function level variable) or const (immutable variable).</p>
+        <p>Variables in JavaScript can be called using the var keyword</p>
+        <code>
+            <pre>var x;
+var y = 2;</pre>
+        </code>
+      </section>
+
+      <section class="main-section" id="C++">
+        <header>C++</header>
+        <p>The C++ language has two main components: a direct mapping of hardware features provided primarily by the C subset, and zero-overhead abstractions based on those mappings. Stroustrup describes C++ as "a light-weight abstraction programming language [designed] for building and using efficient and elegant abstractions"; and "offering both hardware access and abstraction is the basis of C++. Doing it efficiently is what distinguishes it from other languages."</p>
+        <p>C++ inherits most of C's syntax. The following is Bjarne Stroustrup's version of the Hello world program that uses the C++ Standard Library stream facility to write a message to standard output:</p>
+        <code>
+            <pre>#include &lt;iostream&gt;
+int main()
+{
+    std::cout &lt;&lt; "Hello, world!\n";
+}</pre>
+        </code>
+      </section>
+
+      <section class="main-section" id="Python">
+        <header>Python</header>
+        <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+        <p>Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.</p>
+        <p>Hello world program:</p>
+        <code>
+            <pre>print('Hello, world!')</pre>
+        </code>
+        <p>Program to calculate the factorial of a positive integer:</p>
+        <code>
+            <pre>n = int(input('Type a number, and its factorial will be printed: '))
+if n &lt; 0:
+    raise ValueError('You must enter a non-negative integer')
+
+factorial = 1
+for i in range(2, n + 1):
+    factorial *= i
+
+print(factorial)</pre>
+        </code>
+      </section>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
